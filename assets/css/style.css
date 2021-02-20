@@ -1,0 +1,263 @@
+body {
+    background-image: url(../images/23298a55526729.5988857400116.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    background-size: cover;
+}
+
+.backgraund {
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+.flex-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 350px;
+    height: auto;
+    margin-top: 10%;
+}
+
+.flex-container a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: 90px;
+    margin: 5px 0;
+    /* float: left; */
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+
+.flex-container a:hover {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.a {
+    width: 95%;
+
+}
+
+.b {
+    width: 85%;
+}
+
+.active {
+    border: aliceblue;
+    border-style: dotted;
+}
+
+.c {
+    width: 80%;
+}
+
+.d {
+    width: 90%;
+}
+
+.topside {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+}
+
+.home {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.home h1 {
+    font-size: 50px;
+    border-bottom: 1px solid rgb(98, 93, 93);
+    text-transform: uppercase;
+    margin-top:0
+}
+
+.home h3 {
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+    margin: 0;
+    margin-top:-30px;
+}
+
+footer {
+    float: right;
+    color: white;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 5);
+    display: flex;
+    transition: .5s;
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+}
+
+.box .imgBx {
+    width: 150px;
+    flex: 0 0 150px;
+}
+
+.box .imgBx img {
+    max-width: 100px;
+}
+
+.box .content {
+    padding-left: 20px;
+}
+
+.box .content h2 {
+    margin-left: 200px;
+    padding-right: 0;
+    color: black;
+    font-size: 2opx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.box .content p {
+    margin: -5px;
+    padding: 0 0 0;
+    text-align: left;
+    margin-left: 120px;
+    font-size: 15px;
+}
+
+.container {
+    white-space: normal;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 50%;
+    padding: 10px;
+}
+
+.container img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.card1 h5 p {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-right: -70%;
+}
+
+.card1 {
+    width: 50%;
+}
+
+.card2 h5 p {
+    width: 50%;
+    background-color: rgb(114, 163, 182);
+    color: snow;
+    display: flex;
+    flex-direction: row;
+}
+
+.card2 img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    width: 90%;
+}
+
+.container2 {
+    margin-right: 10%;
+
+}
+
+.container2 h5 {
+    background-color: burlywood;
+    font-size:20px;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media screen and (max-width: 575.98px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 200%;
+        background-size: cover;
+    }
+    .home h1 {
+        font-size: 18px;
+    }
+    .home h3 {
+        font-size: 8px;
+    }
+    .container2 {
+        position: absolute;
+        margin-top: 500px;
+    }
+    .aboutus {
+        position: absolute;
+        margin-top: 300px;
+    }
+    .aboutus p {
+        color: black;
+        font-size: 15px;
+        float: left;
+    }
+    .container {
+        position: absolute;
+        size: 500px;
+    }
+    .a {
+        max-width: 30%;
+        margin-top: 30px !important;
+    }
+    .b {
+        max-width: 35%;
+    }
+    .c {
+        max-width: 45%;
+    }
+    .d {
+        max-width: 48%;
+    }
+    .box {
+        position: absolute;
+        width: 100px;
+    }
+    .box .imgBx img {
+        max-width: 20px;
+    }
+    .box .content p {
+        width: 50px;
+    }
+}
